@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "prettier": "2.8.4",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}

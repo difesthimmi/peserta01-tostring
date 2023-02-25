@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link href="public/css/final.css" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/output.css">
+
+    <!-- animasi -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="public/js/acc.js"></script>
+    <script src="public/js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600&family=Aladin&family=Poppins&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+
+    <!-- navigation -->
+    <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#home" class="block py-6 text-lg font-bold text-primary animate__animated animate__fadeInDown"><img src="public/img/logo.png" alt="logo" width="80%" /></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+              <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+              <span class="transition duration-300 ease-in-out hamburger-line"></span>
+              <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
+            </button>
+            <nav id="nav-menu" class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#" class="flex py-2 mx-8 text-base text-primary group-hover:text-yellow-700 dark:text-white animate__animated animate__fadeInDown">Home</a>
+                </li>
+                <li class="group">
+                  <a href="#pengertian" class="flex py-2 mx-8 text-base text-primary group-hover:text-yellow-700 dark:text-white animate__animated animate__fadeInDown">Pengertian</a>
+                </li>
+                <li class="group">
+                  <a href="#dampak" class="flex py-2 mx-8 text-base text-primary group-hover:text-yellow-700 dark:text-white animate__animated animate__fadeInDown">Dampak</a>
+                </li>
+                <li class="group">
+                  <a href="#solusi2" class="flex py-2 mx-8 text-base text-primary group-hover:text-yellow-700 dark:text-white animate__animated animate__fadeInDown">Solusi</a>
+                </li>
+                <li class="group">
+                  <a href="#bebas_sampah" class="flex py-2 mx-8 text-base text-primary group-hover:text-yellow-700 dark:text-white animate__animated animate__fadeInDown">Artikel</a>
+                </li>
+                <li class="group">
+                  <a href="about.html" class="flex py-2 mx-8 text-base text-primary group-hover:text-yellow-700 dark:text-white animate__animated animate__fadeInDown">About Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- navigation end -->
+
+  <!-- hero -->
+    <section id="hero" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mt-20 mb-10 lg:w-1/2">
+            <h2 class="sec-satu max-w-lg mb-5 text-3xl  font-bold text-primary dark:text-white lg:text-5xl  animate__animated animate__fadeInLeft">Mengelola Sampah</h2>
+            <h2 class="sec-satu max-w-lg mb-5 text-3xl  font-bold text-primary dark:text-white lg:text-5xl animate__animated animate__fadeInLeft">Lebih Gampang dari Rumah</h2>
+            <p class="sec-2-sub animate__animated animate__fadeInLeft">Mendaur ulang kembali adalah salah satu usaha untuk mengatasi <br> <strong class="text-primary">SAMPAH</strong>  yang semakin banyak setiap harinya</p>
+            <button class="btn-1 rounded-md font-bold animate__animated animate__fadeInLeft"><a href="#pengertian">Selengkapnya</a></button>
+            <button class="btn-2 rounded-md font-bold animate__animated animate__fadeInLeft"><a href="about.html">Tentang Kami</a></button>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 ">
+            <img src="public/img/vector.png" alt="" class="relative z-10 max-w-full mx-auto -mt-2 animate__animated animate__fadeInRightBig" width="100%">
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- hero end -->
+
+    <!-- pengertian -->
+    <section id="pengertian" class="pb-16 bg-slate-100 pt-10 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto mb-16 text-center">
+            <h4 class="mb-2 text-2xl font-semibold text-primary">Pengertian & Penjelasan</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-3xl">Sampah! Mengapa Kita Harus Memperhatikannya?</h2>
+          </div>
+        </div>
+        <section class="dark:bg-dark">
+          <div class="container">
+            <div class="flex flex-wrap">
+              <div class="w-full px-4 mb-6 lg:w-1/2">
+                <h3 class="mb-6 text-3xl font-semibold text-dark dark:text-white lg:pt-5 lg:text-3xl">Apa sih <span class="text-3xl text-primary lg:pt-5 lg:text-3xl">Sampah</span> itu?</h3>
+                <a class="font-medium text-md text-primary"
+                  >Sampah
+                  <span class="font-medium text-md text-secondary md:text-lg"
+                    >merupakan permasalahan yang sangat umum terjadi di masyarakat global. Sampah merupakan material sisa hasil aktivitas yang dibuang sebagai hasil dari proses produksi, baik itu dalam industri maupun rumah tangga.</span
+                  ></a
+                >
+                <img src="public/img/bgsc2.png" alt="" class="relative z-10 max-w-full mt-5" width="100%" />
+              </div>
+              <div class="w-full px-4 mb-10 lg:w-1/2">
+                <h3 class="mb-3 text-3xl font-semibold text-primary dark:text-white lg:pt-5 lg:text-3xl">Alasan Kenapa Kita Harus Memperhatikan Sampah</h3>
+                <div class="flex flex-wrap mt-3">
+                  <div class="w-1/2 px-4">
+                    <img src="public/img/1.png" alt="" class="max-w-full" width="50px">
+                  </div>
+                  <div class="w-3/5 px-4">
+                    <h3 class="text-3xl font-semibold text-dark dark:text-white lg:pt-5 lg:text-2xl">Sumber Penyakit</h3>
+                    <p class="font-medium text-md text-secondary md:text-lg">Membuang sampah sembarangan dapat mengundang<br />berbagai jenis bakteri, virus dan parasit.</p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap mt-3">
+                  <div class="w-1/2 px-4">
+                    <img src="public/img/2.png" alt="" class="max-w-full" width="50px">
+                  </div>
+                  <div class="w-3/5 px-4">
+                    <h3 class="text-3xl font-semibold text-dark dark:text-white lg:pt-5 lg:text-2xl">Menyebabkan Banjir</h3>
+                    <p class="font-medium text-md text-secondary md:text-lg">Membuang sampah sembarangan juga dapat mencemari<br />air dan udara serta dapat menyebabkan banjir.</p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap mt-3">
+                  <div class="w-1/2 px-4">
+                    <img src="public/img/3.png" alt="" class="max-w-full" width="50px">
+                  </div>
+                  <div class="w-3/5 px-4">
+                    <h3 class="text-3xl font-semibold text-dark dark:text-white lg:pt-5 lg:text-2xl">Membunuh Hewan</h3>
+                    <p class="font-medium text-md text-secondary md:text-lg">Sampah plastik yang dibuang sembarangan juga dapat<br />membunuh hewan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section> 
+    <!-- pengertian end-->
+   
+  <!-- klasifikasi -->
+    <section id="klasifikasi" class="pb-16 pt-10">
+      <div class="container object-center">
+        <h4 class="mb-2 text-2xl text-center font-semibold text-primary">Macam-Macam Sampah</h4>
+        <h2 class="mb-4 text-3xl text-center font-bold text-dark dark:text-white sm:text-4xl lg:text-3xl">Klasifikasi Sampah</h2>
+        <img src="/public/img/kotak1.png" class="mx-auto" alt="" />
+      </div>
+      <div class="grid-cols-4 gap-4 flex px-4">
+        <div class="w-full px-4" height="30px">
+          <img class="img-solusi" src="public/img/kertas.png" alt="" width="20%">
+          <h4 class="text-solusi-1 mb-2 text-2xl font-semibold text-primary">KERTAS</h4>
+        </div>
+        <div class="garis-vertikal" style="border-left: 5px #14b8a6 solid; height: 95px;"></div>
+        <div class="w-full px-4">
+          <img class="img-solusi" src="public/img/botol.png" alt="" width="20%">
+          <h4 class="text-solusi-1 mb-2 text-2xl font-semibold text-primary">PLASTIK</h4>
+        </div>
+        <div class="garis-vertikal" style="border-left: 5px #14b8a6 solid; height: 95px;"></div>
+        <div class="w-full px-4">
+          <img class="img-solusi" src="public/img/botol-kaca.png" alt="" width="20%">
+          <h4 class="text-solusi-2 mb-2 text-2xl font-semibold text-primary">BOTOL KACA</h4>
+        </div>
+        <div class="garis-vertikal" style="border-left: 5px #14b8a6 solid; height: 95px;"></div>
+        <div class="w-full px-4">
+          <img class="img-solusi" src="public/img/elektronik.png" alt="" width="20%">
+          <h4 class="text-solusi-2 mb-2 text-2xl font-semibold text-primary">ELEKTRONIK</h4>
+        </div>
+      </div>
+    </section>
+  <!-- klasifikasi -->
+
+     <!-- dampak & solusi-->
+     <section id="dampak" class="pb-12 pt-10 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-full mx-auto mb-16 text-center">
+            <h4 class="mb-2 text-2xl font-semibold text-primary">Dampak & Pengelolaan</h4>
+            <h2 class="text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-3xl">Penyebab, Dampak Dan Cara Mengelola Sampah</h2>
+          </div>
+        </div>
+        <section class="dark:bg-dark">
+          <div class="container">
+            <div class="flex flex-wrap">
+              <div class="w-2/5 px-4 mb-6 lg:w-2/5">
+                <h3 class="mb-6 text-3xl font-semibold text-primary dark:text-white lg:pt-5 lg:text-3xl">Penyebab Sampah</h3>
+              </div>
+              <div class="garis-vertikal" style="border-left: 5px #14b8a6 solid; height: 95px; width: 0px"></div>
+              <div class="w-3/5 px-4 mb-10 lg:w-2/3">
+                <h3 class="font-medium text-2xl text-secondary md:text-3xl">Faktor penyebab sampah adalah meningkatnya konsumsi oleh manusia yang diakibatkan oleh rendahnya kesadaran dan pendidikan masyarakat, lemahnya peraturan dan peningkatan jumlah penduduk.</h3>
+              </div>
+              <div class="w-full px-4 mb-6 lg:w-1/2">
+                <h3 class="mb-6 text-3xl font-semibold text-primary dark:text-white lg:pt-5 lg:text-3xl">Dampak Membuang Sampah Sembarangan</h3>
+                <h3 class="mb-6 font-medium text-2xl text-secondary md:text-3xl">Dampak membuang sampah sembarangan akan merusak pemandangan, menyebabkan bau yang tidak sedap, mendatangkan banjir level rendah sampai tinggi serta dapat mengundang berbagai jenis bakteri, virus dan parasit.</h3>
+                <h3 class="text-3xl font-semibold text-primary dark:text-white lg:pt-5 lg:text-3xl">3 Langkah Pengelolaan Sampah</h3>
+                <h4 class="font-medium text-md text-dark md:text-lg">Mengelola Sampah dapat dilakukan dengan Menerapkan 3R. Apa itu 3R?</h4>
+                <div class="flex flex-wrap mt-3">
+                  <div class="w-1/2 px-4">
+                    <img src="public/img/1.png" alt="" class="max-w-full" width="50px">
+                  </div>
+                  <div class="w-3/5 px-4">
+                    <h3 class="text-3xl font-semibold text-dark dark:text-white lg:pt-5 lg:text-2xl">Reuse</h3>
+                    <p class="font-medium text-md text-secondary md:text-lg">Reuse yaitu menggunakan kembali barang dengan fungsi<br>yang sama ataupun fungsi yang berbeda</p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap mt-3">
+                  <div class="w-1/2 px-4">
+                    <img src="public/img/2.png" alt="" class="max-w-full" width="50px">
+                  </div>
+                  <div class="w-3/5 px-4">
+                    <h3 class="text-3xl font-semibold text-dark dark:text-white lg:pt-5 lg:text-2xl">Reduce</h3>
+                    <p class="font-medium text-md text-secondary md:text-lg">Reduce yaitu mengurangi penggunaan bahan-bahan<br>yang dapat merusak bumi</p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap mt-3">
+                  <div class="w-1/2 px-4">
+                    <img src="public/img/3.png" alt="" class="max-w-full" width="50px">
+                  </div>
+                  <div class="w-3/5 px-4">
+                    <h3 class="text-3xl font-semibold text-dark dark:text-white lg:pt-5 lg:text-2xl">Recycle</h3>
+                    <p class="font-medium text-md text-secondary md:text-lg">Recycle adalah proses mengubah sampah atau barang<br>bekas menjadi bahan baku untuk membuat barang yang<br>baru</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full px-4 mb-6 lg:w-1/2">
+                <img src="public/img/sampah.png" alt="sampah" class="max-w-full" width="100%" height="80%">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- dampak & solusi end-->
+
+    <!-- solusi2 -->
+    <section id="solusi2" class="pt-10">
+      <div class="container">
+        <div class="w-full px-4 py-5">
+          <div class="max-w-xl mx-auto mb-16 text-center">
+            <h4 class="mb-2 text-2xl font-semibold text-primary">Ubah Sampah Jadi Rupiah?</h4>
+            <h2 class="text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-3xl">Sesampah Sampahnya Sampah Aja, Masih Bernilaikan Rupiah...</h2>
+          </div>
+          <div class="grid-cols-3 gap-4 flex items-center">
+            <div class="pt- mb-10">
+              <a class="block solusi max-w-sm bg-white border border-gray-200 rounded-lg shadow hover dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <img class="img-solusi" src="public/img/throwing-trash 1.png" alt="" />
+                <h4 class="text-solusi mb-2 text-2xl font-semibold text-primary">Pilah Sampah</h4>
+                <h3 class="text-solusi mb-6 font-medium text-2xl text-secondary md:text-3xl">Pilah dan pastikan sampah dalam keadaan bersih dan kering. Kemas sampah dengan baik dan aman.</h3>
+              </a>
+              <a class="block solusi max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <img class="img-solusi" src="public/img/delivery-bike 1.png" alt="" />
+                <h4 class="text-solusi mb-2 text-2xl font-semibold text-primary">Kirim Sampah</h4>
+                <h3 class="text-solusi mb-6 font-medium text-2xl text-secondary md:text-3xl">BKirimkan sampah melalui ekspedisi atau datang langsung ke mitra</h3>
+              </a>
+            </div>
+            <div class="w-full px-4 mb-6 lg:w-1/2">
+              <img src="public/img/ecology.png" alt="ecologi" class="solusi-center">
+            </div>
+            <div class="pt-10 mb-10">
+              <a class="block solusi2 mx-5 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <img class="img-solusi" class="" src="public/img/solusi2-2.png" alt="" />
+                <h4 class="text-solusi mb-2 text-2xl font-semibold text-primary">Membuat Transaksi</h4>
+                <h3 class="text-solusi mb-6 font-medium text-2xl text-secondary md:text-3xl">Buat transaksi pada di website yang menyediakan  penyetoran sampah.</h3>
+              </a>
+              <a class="block solusi2 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <img class="img-solusi" src="public/img/solusi2-4.png" alt="" />
+                <h4 class="text-solusi mb-2 text-2xl font-semibold text-primary">Sampah Terkelola</h4>
+                <h3 class="text-solusi mb-6 font-medium text-2xl text-secondary md:text-3xl">Sampah yang telah sampai akan dikelola secara bertanggung jawab</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- solusi2 end -->
+
+    
+    <section id="bebas_sampah" class="pb-12 pt-10 bg-slate-100 dark:bg-slate-800">
+      <div class="container">
+        <div class="dark:bg-dark">
+          <div class="container">
+            <div class="flex flex-wrap">
+              <div class="w-full px-4 mb-6 lg:w-2/5">
+                <h4 class="mb-2 text-2xl font-semibold text-primary">Artikel</h4>
+                <h3 class="text-3xl font-semibold text-dark dark:text-white lg:pt-5 lg:text-4xl">Gerakan Bebas Sampah</h3>
+              </div>
+              <div class="w-3/5 px-4 mb-10 lg:w-2/3">
+              </div>
+              <div class="px-4 mb-6 lg:w-1/2">
+                <div class="wrapper bg-gray-400 antialiased text-gray-900">
+                  <div>    
+                      <img src="public/img/sampah-1.jpeg" width="20%" height="20%" alt="" class="w-full object-cover object-center rounded-lg shadow-md">    
+                   <div class="relative px-4">
+                     <div class="bg-white p-6 rounded-lg shadow-lg" style="margin-top: -25%; height: 210%;">
+                      <div class="ml-3 mr-3">
+                        <i class="fas fa-user mt-5 mb-3" style="color: yellow"><span class="text-dark ml-2"> By TrashBack Team</span></i>
+                        <h2 class="mb-3 text-3xl font-bold text-primary dark:text-white sm:text-4xl lg:text-2xl">Simpatisan Menggelar Aksi  Gerakan Bebas Sampah</h2>
+                          <p class="font-medium text-md mb-3 text-secondary md:text-lg">Ketua Akar Lampung Mardian Syah mengatakan, "Aksi sosial ini dalam rangka memperingati hari bebas sampah nasional"</p>
+                        <div class="mt-4"> 
+                          <button style="padding: 13px; background: #14b8a6; border-radius: 12px; color: white; margin-bottom: 15px;" >Read More <i class="fas fa-arrow-circle-right"></i></button>
+                      </div>  
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full px-4 mb-6 lg:w-1/2">
+                <div class="wrapper bg-gray-400 antialiased text-gray-900">
+                  <div>    
+                      <img src="public/img/sampah-2.jpeg" width="20%" height="20%" alt=" random imgee" class="w-full object-cover object-center rounded-lg shadow-md">    
+                   <div class="relative px-4 bg-">
+                     <div class="bg-white p-6 rounded-lg shadow-lg" style="margin-top: -25%; height: 210%;">
+                      <div class="ml-3 mr-3">
+                        <i class="fas fa-user mt-5 mb-3" style="color: yellow"><span class="text-dark ml-2"> By TrashBack Team</span></i>
+                        <h2 class="mb-3 text-3xl font-bold text-primary dark:text-white sm:text-4xl lg:text-2xl">Bergerak Untuk Indonesia Bebas Sampah 2023</h2>
+                          <p class="font-medium mb-3 text-md text-secondary md:text-lg">Sebagai upaya untuk mewujudkan Indonesia bebas sampah pada tahun 2023</p>
+                        <div class="mt-4"> 
+                        <button data-modal-target="staticModal" data-modal-toggle="staticModal" style="padding: 13px; background: #14b8a6; border-radius: 12px; color: white;margin-bottom: 15px;" >Read More <i class="fas fa-arrow-circle-right"></i></button>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div> 
+    </section>
+
+    <section id="about" class="pb-10 pt-10 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap justify-center w-full px-8 xl:mx-auto xl:w-10/12">
+          <div class="md:w-1/2">
+            <img src="public/img/R3.png" alt="" width="70%">
+          </div>
+        <div class="p-4 mb-12 md:w-1/2">
+          <h3 class="mb-4 text-2xl font-semibold text-primary dark:text-white lg:pt-5 lg:text-3xl">Orang Juga Bertanya</h3> 
+          <div class="accordion-body">
+            <div class="accordion">
+              <hr>
+              <div class="container">
+                <div class="label">Apa manfaat dari daur ulang sampah?</div>
+                <div class="content">
+                  <p>
+                    <li>Menghemat Energi</li>
+                    <li>Mengurangi polusi</li>
+                    <li>Menghemat SDA</li>
+                    <li>Menghemat uang</li>
+                    <li>Ekonomis</li>
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="container">
+                <div class="label">4 Langkah pengolahan sampah</div>
+                <div class="content">
+                  <p>
+                    <ul>1. Reduce (Mengurangi)</ul>
+                    <ul>2. Reuse (Menggunakan Kembali)</ul>
+                    <ul>3. Recycle (Mendaur Ulang)</ul>
+                    <ul>4. Replace (Mengganti)</ul>
+                </p>
+              </div>
+            </div>
+            <hr>
+              <div class="container">
+                <div class="label">Apa dampak dari sampah?</div>
+                <div class="content">
+                  <p>
+                    Beberapa dampak sampah yang tidak terkelola dengan baik:
+                    <ul>1. Pencemaran lingkungan</ul>
+                    <ul>2. Sarang penyebaran penyakit</ul>
+                    <ul>3. Ancaman bagi kehidupan hewan di alam liar</ul>
+                  </p>
+              </div>
+            </div>
+              <div class="container">
+                <div class="label">Faktor penyebab buang sampah sembarangan</div>
+                <div class="content">
+                  <p>
+                    <li>Faktor penyebab buang sampah sembarangan yakni sarana dan prasarana yang tidak tersedia (63%), tingkat pendidikan yang rendah (57%), dan kurangnya dukungan pemerintah desa dalam pengolahan sampah</li>
+                  </p>
+              </div>
+            </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="pt-10 pb-12 bg-dark">
+      <div class="container">
+        
+        <!-- MENAMPILKAN PETA -->
+      <div class="container">
+        <h3 class="mb-4 text-center text-2xl font-semibold text-white dark:text-white lg:pt-5 lg:text-3xl">Beberapa Titik Bank Sampah di Indonesia</h3> 
+     </div>
+       <div id="map"></div>
+
+        <div class="w-full pt-10 border-t border-slate-700">
+          <p class="text-xs font-bold text-center text-slate-500" style="font-size: 20px">Copyright @ 2023 <a href="" target="_blank" class="font-bold text-primary">TrashBack</a> Team</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#hero" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+      <span class="block w-5 h-5 mt-2 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+
+    <script src="public/js/script.js"></script>
+  </body>
+</html>
